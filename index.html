@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form action="/contacto" method="get">
+        <label for="nombre_id">
+            Nombre
+            <input id="nombre_id required placeholder="Escribí tu nombre" type="text" name="nombre">
+        </label>
+        <label>
+            Apellido
+            <input type="text" name="apellido">
+        </label>
+        <label>
+            Email
+            <input type="email" name="email">
+        </label>
+        <label>
+            Edad
+            <input type="number" name="edad">
+        </label>
+
+        <label>
+            Contraseña
+            <input type="password" name="contraseña">
+        </label>
+        <label>
+            CUIT
+            <input maxlength="10" type="text" name="cuit">
+        </label>
+        <label>
+            Le gustan los:
+            <input type="checkbox" name="pet" value="dog">Perros
+            <input type="checkbox" name="pet" value="cat">Gatos
+            <input type="checkbox" name="pet" value="birds">Pájaros
+        </label>
+        <label>
+
+            <input type="date"> Fecha de nacimiento
+        </label>
+
+        <label>
+
+            <input type="url"> Página Web
+
+        </label>
+
+        <label>
+            <input type="file" name="archive"> Adjuntar archivos
+        </label>
+
+        <label>
+            <textarea rows="8" cols="50" placeholder="Describite brevemente" name="textarea" ></textarea>
+        </label>
+
+        <label>
+            Seleccione una ciudad para vacacionar
+            <select multiple="multiple" size="6" name="ciudades">
+                <option value="BUE">Buenos Aires</option>
+                <option>La Plata</option>
+                <option value="MDQ"> "Mar Del Plata</option>
+                <option selected>Miramar</option>
+                <option>Córdoba</option>
+                <option value="MZA">Mendoza</option>
+            </select>
+        </label>
+
+        Acepta términos y condiciones
+        <input checked type="radio" name="terminos" value="1"> Sí
+        <input type="radio" name="terminos" value="no"> No
+        <input type="submit">
+        <button>Botón</button>
+</body>
+
+</html>
